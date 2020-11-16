@@ -6,16 +6,20 @@
 
 // creazione di un array contenente dei cognomi
 var nameList = ["Simpson", "Van Houten", "Burns", "Nahasapeemapetilon"];
-console.log(nameList);
+console.log("La lista iniziale è composta da:", nameList);
 
 // chiedere all'utente il proprio cognome
 var customerName = prompt("Inserire il proprio cognome");
-console.log(customerName);
+console.log("Il tuo cognome è:", customerName);
 
 // inserirlo all'interno dell'array precedentemente creata
 nameList.push(customerName);
-console.log(nameList);
+console.log("La nuova lista è composta da:", nameList);
 
 // stampare la lista dei cognomi in ordine alfabetico
+nameList.sort();
+for (var i = 0; i < nameList.length; i++) {
+     console.log(nameList[i]);
+}
 
-// scrivere la posizione "umana" della lista in cui l'utente si trova: array.length + 1?
+// console.log("Il tuo cognome si trova in posizione:", nameList.length);
